@@ -2,6 +2,7 @@ const key1 = document.querySelector('.r1c1')
 
 key1.addEventListener("click", () => {
     document.querySelector(".upper").innerText = "1"
+
 })
 
 const key2 = document.querySelector('.r1c2')

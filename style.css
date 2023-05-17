@@ -166,7 +166,8 @@
 
 .footer2 img {
     animation-name: phone;
-    animation-duration: 5s;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
 }
 
 .footer1:hover {
@@ -194,6 +195,12 @@
     height: 25px;
 }
 
+.delete img {
+    animation-name: arrow;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
+
 
 /* Key Frames */
 
@@ -205,9 +212,18 @@
 
 @keyframes phone {
     from {
-        transform: translateY(0)
+        transform: translateY(5px)
     }
     to {
-        transform: translateY(5px);
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes arrow {
+    from {
+        transform: translateX(8px)
+    }
+    to {
+        transform: translateX(-8px);
     }
 }
