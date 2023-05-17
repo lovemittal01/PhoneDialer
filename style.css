@@ -22,7 +22,7 @@
     height: 550px;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px 1px rgb(58, 58, 58);
+    box-shadow: 0px 0px 10px 2px rgb(58, 58, 58);
 }
 
 .upper {
@@ -39,6 +39,7 @@
     background-color: white;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    animation: movShad 5s infinite;
 }
 
 .lower {
@@ -54,7 +55,7 @@
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     /* box-shadow: 0 -10px 10px gray; */
-    animation: movShad 5s infinite;
+    /* animation: movShad 5s infinite; */
 }
 
 .row1 {
@@ -206,7 +207,7 @@
 
 @keyframes movShad {
     50% {
-        box-shadow: 0px -10px 15px 3px #6495ED;
+        box-shadow: 0px -10px 15px 3px #6495ED inset;
     }
 }
 
