@@ -8,8 +8,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1263px;
-    height: 620px;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: auto;
     background-color: #6495ED;
 }
 
@@ -56,6 +57,13 @@
     border-bottom-right-radius: 20px;
     /* box-shadow: 0 -10px 10px gray; */
     /* animation: movShad 5s infinite; */
+}
+
+.grid {
+    display: grid;
+    background-color: white;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 35px;
 }
 
 .row1 {
